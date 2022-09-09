@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background-color: #D9D9D9;
+    height: auto;
+}
+@font-face {
+    font-family: logo;
+    src: url(../fontes/meaculpa.ttf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../fontes/OpenSans-CondBold.ttf);
+}
+@font-face {
+    font-family: texto;
+    src: url(../fontes/Jaldi-Regular.ttf);
+}
+
+/* ------------- COMEÇO DO CABEÇALHO ----------------- */
+
+#navegacao-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    border-bottom: #c1c1c1 1px solid;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+#navegacao-principal nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#navegacao-principal .logo a {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: logo;
+}
+
+#navegacao-principal nav ul {
+    display: flex;
+    gap: 10px; /* Esse GAP serve pra dar espaçamento entre os LI que ta dentro da UL */
+    justify-content: space-between;
+}
+
+#navegacao-principal nav ul li a {
+    padding: 10px;
+    opacity: 0.8;
+
+}
+
+#navegacao-principal nav ul li a:hover {
+    opacity: 1;
+    transition: 200ms all;
+}
+
+/* ----------------- FIM DO CABEÇALHO ------------------------ */
+
+/* ------------- COMEÇO DA APRESENTACAO ----------------- */
+
+#apresentacao {
+    width: 100%;
+    height: 50rem;
+    color: #c1c1c1;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url(../img/fundohome.jpg);
+    filter: brightness(80%);
+}
+
+#apresentacao h3 {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 140px;
+    font-weight: 500;
+    color: #fff;
+    font-family: logo;
+    text-shadow: 1px 2px 2px #000;
+}
+#apresentacao h4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: #fff;
+    font-family: titulo;
+    text-shadow: 1px 2px 2px #000;
+}
+
+
+/* ----------------- FIM DA APRESENTACAO ------------------------ */
+
+/* ------------- COMEÇO DO CONTEUDO COMO FUNCIONAMOS ----------------- */
+
+#comofunc {
+    width: 80%;
+    background-color: #FFF;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    top: -100px;
+    
+}
+#comofunc .titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color:#6B6B6B;
+    font-size:40px ;
+}
+#comofunc h1{
+    font-family: titulo;
+}
+#comofunc .titulo hr{
+    width: 90%;
+    margin:auto;
+
+}
+#comofunc .iconees{
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    margin: auto;
+    grid-gap: 20px;
+}
+#comofunc .caixa1, .caixa2, .caixa3, .caixa4{
+    height: 100%;
+    width: 100%;
+}
+#comofunc h2{
+    font-family: titulo;
+    text-align: center;
+    color:#6B6B6B;
+    font-size: 30px;
+}
+#comofunc p{
+    text-align: center;
+    font-family: texto;
+    line-height: 20px;
+    font-size: 25px;
+    padding-top: 15%;
+    font-weight: 200;
+    color:#6B6B6B;
+}
+.botaoprin{
+    padding-top:3%;
+    width: 20%;
+    margin: auto;
+}
+
+#comofunc .saibamaisbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #828DB3;
+    color: #FFF;
+    height: 80px;
+    width: 100%;
+    font-size: 40px;
+    border-radius: 25px;
+    font-family: texto;
+}
+#comofunc .saibamaisbtn:hover{
+    background-color: #9aa5cf;
+}
+
+
+/* ----------------- FIM DO CONTEUDO COMO FUNCIONAMOS ------------------------ */
+
+/* ------------- COMEÇO DA FINALIZACAO ----------------- */
+#produtos {
+    width: 100%;
+    height: 50rem;
+    color: #c1c1c1;
+    position: relative;
+    top: -200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url(../img/fundohome2.jpg);
+    filter: brightness(80%);
+}
+
+#produtos h3{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    font-family: titulo;
+    text-shadow: 1px 2px 2px #000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    filter: brightness(100%);
+}
+#pratos_regionais {
+    width: 80%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    top:-300px;
+    display: grid;
+}
+#pratos_regionais .regioes_container{
+    background-color: #c1c1c1;
+    grid-template-rows: 5fr;
+    height: 150px;
+    position: relative;
+}
+
+.nordeste,.sul,.norte,.sudeste,.centrooeste{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    font-family: titulo;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    z-index: 2;
+    background-color: #c1c1c1;
+    grid-template-rows: 5fr;
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(80%);
+    text-shadow: 1px 2px 2px #000;
+}
+.nordeste:hover,.sul:hover,.norte:hover,.sudeste:hover,.centrooeste:hover{
+    filter: brightness(100%);
+    transition: 200ms all;
+}
+
+.nordeste{
+    background-image: url(../img/nordeste.jpg);
+}
+.sul{
+    background-image: url(../img/sul.jpg);
+}
+.norte{
+    background-image: url(../img/norte.jpg);
+}
+.sudeste{
+    background-image: url(../img/sudeste.jpg);
+}
+.centrooeste{
+    background-image: url(../img/centro\ oeste.jpg);
+}
+
+#finalizacao {
+    margin: auto;
+    width: 70%;
+    height: 14rem;
+    color: #ffffff;
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:100px;
+    margin-bottom: 100px;
+}
+#finalizacao h1{
+    text-align: center;
+    color: #6B6B6B;
+    position: relative;
+    top: 150px;
+    font-family: logo;
+    font-size: 100px;
+    font-weight: 500;
+    border-bottom: 1px solid #CCC;
+    
+}
+#finalizacao p{
+    top: 200px;
+    text-align: justify;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    height: 100%;
+   
+}
+.arearede{
+   margin-top: 10%;
+   color: #000;
+   line-height: 15px;
+   
+}
+.arearede form{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+
+}
+.arearede input {
+    height: 40px;
+    padding-left: 10px;
+    border: 0px solid #FFF;
+    border-bottom: 1px solid #000;
+}
+.arearede textarea{
+    padding: 10px 0 0 10px ;
+    border: 0px solid #FFF;
+    border-bottom: 1px solid #000;
+}
+.redesocial{
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:10px;
+    align-items: center;
+}
+.redesocial h2{
+    font-family: titulo;
+    text-align: center;
+    color: #6B6B6B;
+    margin-bottom: 5%;
+}
+.imgicones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 7%;   
+}
+.icones{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.icones img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------- FIM DA FINALIZACAO ------------------------ */
+
+
+/* ------------- COMEÇO DO FOOTER ----------------- */
+
+
+/* ----------------- FIM DO FOOTER ------------------------ */
